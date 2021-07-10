@@ -29,10 +29,18 @@ html
                 div(class="form-row d-flex bigDiv")
                     div(class="form-group col-md-6 smallDiv")
                         label(for="passwd" class="labelStyle required" ) Password 
-                        input(type="password" class="form-control" id="passwd" name="passwd" placeholder="eg. Kshitij_1-2@34" pattern="^[a-zA-Z0-9_-@]{8,15}$" required)
+                        input(type="password" class="form-control" id="passwd" name="passwd" placeholder="eg. Kshitij_1-2@34" required)
                     div(class="form-group col-md-6 smallDiv")
                         label(for=" passwdC " class="labelStyle required" ) Confirm Password  
-                        input(type="password" class="form-control" id="passwdC" name="passwdC" placeholder="Reenter password" pattern="^[a-zA-Z0-9_-]{8,15}$" required)
+                        input(type="password" class="form-control" id="passwdC" name="passwdC" placeholder="Reenter password" required)
+                div(class="bigDiv")
+                    h5(style="color:#38ada9; font-size:16px;").
+                        make sure your password meets these conditions -
+                    p(style="color:#95afc0; font-size:14px").
+                        password must be atleast 8 characters long.  
+                        password must have atleast 1 Number,1 lower case letter,1 upper case letter.
+                        password must have atleast 1 special characters (@#$%&).
+                        
                 div(class="form-row d-flex bigDiv")
                     div(class="form-group col-md-5 smallDiv")
                         label(for="passwd" class="labelStyle required" ) Mobile number 

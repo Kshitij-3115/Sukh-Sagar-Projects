@@ -81,7 +81,15 @@ $(document).ready(function () {
   }); //now handle form submission here
 
   $('#userForm').submit(function () {
-    var ok = false; //check if both password fields have same value 
+    var ok = false; //check for password format 
+
+    var pattern = /^.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%&]).*$/;
+    var password = $('#passwd').val();
+
+    if (!pattern.test(password)) {
+      alert('Password is not in the requested format!');
+    } //check if both password fields have same value 
+
 
     if ($('#passwd').val() != $('#passwdC').val()) {
       alert("passwords not matched! please recheck.");

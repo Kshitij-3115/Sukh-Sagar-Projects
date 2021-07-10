@@ -32,7 +32,8 @@ $(document).ready(()=>{
         }
     })
 
-    
+   
+
     $('#cOTP2').click(() => {
         let userOTP = $('#cOTP').val();
 
@@ -84,6 +85,12 @@ $(document).ready(()=>{
     //now handle form submission here
     $('#userForm').submit( () =>{
         let ok = false;
+        //check for password format 
+        let pattern = /^.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%&]).*$/; 
+        let password = $('#passwd').val(); 
+        if(!pattern.test(password)){
+            alert('Password is not in the requested format!'); 
+        }
         //check if both password fields have same value 
         if($('#passwd').val() != $('#passwdC').val()){
             alert("passwords not matched! please recheck."); 

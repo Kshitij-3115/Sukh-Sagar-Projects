@@ -1,5 +1,5 @@
 - let s1 = "background-color : rgba(255, 255, 255,0.8); margin-top : 80px; border-radius : 10px  "
-div(class="container text-center col-6 align-center   pb-2" style = s1)
+div(class="container text-center col-5 align-center   pb-2" style = s1)
     div(style="padding : 10px; border-bottom : 1px solid brown")
         h4(style="color :#273c75 ;font-weight:400; letter-spacing:1px") Login to continue
     - let labelStyle = "color:rgba(10, 61, 98,1.0); font-weight : 500; font-size : 18px; float:left; letter-spacing:1px"
@@ -10,9 +10,9 @@ div(class="container text-center col-6 align-center   pb-2" style = s1)
         div
             label(class="form-label" for="password" style=labelStyle) Password
             input(class="form-control" type="password" id="password" name="password" placeholder="Enter password" required)
-            button(type="submit" class="btn btn-primary btn-block mt-3" id="submitLogin") Login
+            button(type="submit" class="btn btn-primary btn-block mt-3 col-12" id="submitLogin") Login
     div(class="text-center mt-3  text-secondary" style="padding-top : 3px; border-top : 1px solid grey") 
         h5(style="color : rgba(12, 36, 97,1.0)") Not have a account ? 
         
-        a(class="btn btn-success" role="button" href="/signup" ) Sign up 
+        a(class="btn btn-success col-12" role="button" href="/signup" ) Sign up 
         
