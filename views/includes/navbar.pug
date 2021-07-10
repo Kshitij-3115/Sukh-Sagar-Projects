@@ -1,0 +1,46 @@
+//navbar to use across all pages 
+nav(class="navbar navbar-expand-lg navbar-light bg-light sticky-top")
+  span(class="material-icons " style="color:#cd84f1; font-size:48px; margin:0px 5px 0px 10px") school
+  a(class="navbar-brand ml-2" href="#" style="font-size : 25px; color: #3d3d3d") Sukh Sagar Projects
+  button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="toggle navigation")
+    span(class="navbar-toggler-icon")
+  div(class="collapse navbar-collapse" id="navbarSupportedContent")
+    ul(class="navbar-nav ms-auto")
+      li(class="nav-item active")
+        a(class="nav-link" href="#" ) Home
+      li(class="nav-item ")
+        a(class="nav-link" href="#") Contact us
+      li(class="nav-item dropdown")
+        a(class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Features
+        div(class="dropdown-menu" aria-labelledby="navbarDropdown")
+          div(class="d-flex")
+            span(class="material-icons" ) text_snippet
+            a(class="dropdown-item" href="#") Prepare Projects
+          div(class="dropdown-divider") 
+          div(class="d-flex")
+            span(class="material-icons") work
+            a(class="dropdown-item" href="#") Manage your work
+          div(class="dropdown-divider")
+          div(class="d-flex")
+            span(class="material-icons") library_books
+            a(class="dropdown-item" href="#") Manage learning materials
+          div(class="dropdown-divider")
+          div(class="d-flex")
+            span(class="material-icons") video_library
+            a(class="dropdown-item" href="#") publish libraries
+          div(class="dropdown-divider")
+          div(class="d-flex")
+            span(class="material-icons") flag
+            a(class="dropdown-item" href="#") test your skills
+          div(class="dropdown-divider")
+          div(class="d-flex")
+            span(class="material-icons") emoji_events
+            a(class="dropdown-item" href="#") Organize seminars
+      li(class="nav-item")
+        a(class="nav-link" href="#") Guidence
+    form(class=" d-flex my-2 my-lg-0 w-auto mx-3")
+      div(class="input-group")
+        input(type="text" class="form-control" placeholder="Search Projects")
+        div(class="input-group-append")
+          button(class="btn btn-primary" type="submit") 
+            span(class="material-icons") search
